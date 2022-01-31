@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Comp Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/png">
+</head>
+<body>
+
+<header class="header">
+  
+  <div class="container">
+    <div class="logo-0">
+        <a href="#" class="logo">
+          <img src="./images/logo.png" alt="logo">
+        </a>
+    </div>
+
+    <nav class="nav ">
+      <input class="nav__check" type="checkbox" id="showmenu"/>
+      <label class="nav__showmenu" for="showmenu">Меню</label>
+      <label class="nav__back" for="showmenu"></label>
+      <ul class="menu">
+        <li><a class="login" href="#">Войти</a></li>
+        <li><a href="#" class="basket sitelinks__item">
+          Корзина
+        </a></li>
+        <li><a href="#" class="favorites sitelinks__item">
+          Избранное
+        </a></li>
+        <div class="categories">
+          <div class="categories__wrapper">
+            <a href="#" class="categories__item">
+              <img src="./images/categories__1.png" alt="Процессоры">
+              <span>Процессоры</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__2.png" alt="Видеокарты">
+              <span>Видеокарты</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__3.png" alt="Материнские платы">
+              <span>Материнские платы</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__4.png" alt="Оперативная память">
+              <span>Оперативная память</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__5.png" alt="Блоки питания">
+              <span>Блоки питания</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__6.png" alt="Охлаждение компьютера">
+              <span>Охлаждение компьютера</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__7.png" alt="Корпуса">
+              <span>Корпуса</span>
+            </a>
+            <a href="#" class="categories__item">
+              <img src="./images/categories__8.png" alt="Накопители">
+              <span>Накопители</span>
+            </a>
+          </div>
+        </div>
+      </ul>
+    </nav>
+
+    <div class="search">
+      <input type="text" placeholder="comp shop">
+      <button></button>
+    </div>
+    <div class="sitelinks ">
+      <a href="#" class="basket sitelinks__item">
+        Корзина
+      </a>
+      <a href="#" class="favorites sitelinks__item">
+        Избранное
+      </a>
+      <a class="login" href="#">Войти</a>
+    </div>
+  </div>
+</header>
+
+<!-- products__item all active
+
+  products__event-new--active
+  products__event-SALE--active
+  products__favorites--active
+
+  products__bottom-on--active
+  products__bottom-off--active
+
+-->
+
+  <section class="main__body">
+    <div class="container">
+      <div class="categories">
+        <div class="categories__wrapper">
+          <a href="#" class="categories__item">
+            <img src="./images/categories__1.png" alt="Процессоры">
+            <span>Процессоры</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__2.png" alt="Видеокарты">
+            <span>Видеокарты</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__3.png" alt="Материнские платы">
+            <span>Материнские платы</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__4.png" alt="Оперативная память">
+            <span>Оперативная память</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__5.png" alt="Блоки питания">
+            <span>Блоки питания</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__6.png" alt="Охлаждение компьютера">
+            <span>Охлаждение компьютера</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__7.png" alt="Корпуса">
+            <span>Корпуса</span>
+          </a>
+          <a href="#" class="categories__item">
+            <img src="./images/categories__8.png" alt="Накопители">
+            <span>Накопители</span>
+          </a>
+        </div>
+      </div>
+      <div class="content">
+        <div class="advertising">
+          <div class="slider-1">
+            <div class="slider__items">
+              <div class="slider__item">
+                <img src="./images/slid__1.jpg" alt="1">
+              </div>
+              <div class="slider__item">
+                <img src="./images/slid__1.jpg" alt="2">
+              </div>
+              <div class="slider__item">
+                <img src="./images/slid__1.jpg" alt="3">
+              </div>
+              <div class="slider__item">
+                <img src="./images/slid__1.jpg" alt="4">
+              </div>
+              <div class="slider__item">
+                <img src="./images/slid__1.jpg" alt="5">
+              </div>
+            </div> 
+          </div>
+          <a href="#" class="sale__inner">
+            <div class="sale__top">
+              <div class="sale--active">
+                АКЦИЯ
+              </div> 
+              <span class="sale__price">
+                <span class="sale__price-1">
+                  65 000₽
+                </span>
+                <span class="sale__price-2">
+                  98 000₽ 
+                  <span class="sale__price-2-line"></span>
+                </span>
+              </span>
+            </div>
+            <div class="sale__img">
+              <img src="./images/event__1.png" alt="1">
+            </div>
+            <div class="sale__name">
+              Видеокарта MSI nVidia GeForce RTX 2070 SUPER GAMING X TRIO
+            </div>
+            <div class="sale__time">
+              <div class="sale__time-text">
+                Акция действует до
+              </div>
+              <div class="sale__time-number">
+                23.05.2021
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="products">
+          <div class="products__title">
+            Новинки
+          </div>
+          <div class="products__slider products__slider-1">
+
+            <div class="products__item-0">
+              <button class="products__favorites">
+                    
+              </button>
+              
+              <div class="products__bottom-on">
+                <div class="products__price">
+                  102 799 ₽
+                </div>
+                <button href="#" class="products__basket">
+
+                </button>
+              </div> 
+              <div class="products__bottom-off products__bottom-off--active">
+                <div class="products__text">
+                  Товара нет в наличии
+                </div>
+                <button class="products__button-off" href="#">
+                  УВЕДОМИТЬ
+                </button>
+              </div>
+              <a href="#" class="products__item" >
+                <div class="products__item-hover">
+                  посмотреть товар
+                </div>
+                <div class="products__top">
+                  <div class="products__event products__event-new--active">
+                    new
+                  </div>
+                  <div class="products__event">
+                    SALE
+                  </div>
+                  
+                </div>
+                <div class="products__img">
+                  <img src="./images/item__1.jpg" alt="1">
+                </div>
+                <div class="products__name">
+                  Видеокарта MSI GeForce RTX 3080 GAMING TRIO
+                </div>
+              </a>
+            </div>
+            <div class="products__item-0">
+              <button class="products__favorites products__favorites--active">
+                    
+              </button>
+              
+              <div class="products__bottom-on products__bottom-on--active">
+                <div class="products__price">
+                  102 799 ₽
+                </div>
+                <button href="#" class="products__basket">
+
+                </button>
+              </div> 
+              <div class="products__bottom-off ">
+                <div class="products__text">
+                  Товара нет в наличии
+                </div>
+                <button class="products__button-off" href="#">
+                  УВЕДОМИТЬ
+                </button>
+              </div>
+              <a href="#" class="products__item" >
+                <div class="products__item-hover">
+                  посмотреть товар
+                </div>
+                <div class="products__top">
+                  <div class="products__event products__event-new--active">
+                    new
+                  </div>
+                  <div class="products__event">
+                    SALE
+                  </div>
+                  
+                </div>
+                <div class="products__img">
+                  <img src="./images/item__2.jpg" alt="Материнская плата MSI MEG Z590 GODLIKE">
+                </div>
+                <div class="products__name">
+                  Материнская плата MSI MEG Z590 GODLIKE
+                </div>
+              </a>
+            </div>
+            <div class="products__item-0">
+              <button class="products__favorites">
+                    
+              </button>
+              
+              <div class="products__bottom-on products__bottom-on--active">
+                <div class="products__price">
+                  43 999 ₽
+                </div>
+                <button href="#" class="products__basket">
+
+                </button>
+              </div> 
+              <div class="products__bottom-off ">
+                <div class="products__text">
+                  Товара нет в наличии
+                </div>
+                <button class="products__button-off" href="#">
+                  УВЕДОМИТЬ
+                </button>
+              </div>
+              <a href="#" class="products__item" >
+                <div class="products__item-hover">
+                  посмотреть товар
+                </div>
+                <div class="products__top">
+                  <div class="products__event products__event-new--active">
+                    new
+                  </div>
+                  <div class="products__event">
+                    SALE
+                  </div>
+                  
+                </div>
+                <div class="products__img">
+                  <img src="./images/item__3.jpg" alt="Материнская плата ASUS ROG MAXIMUS XIII HERO">
+                </div>
+                <div class="products__name">
+                  Материнская плата ASUS ROG MAXIMUS XIII HERO
+                </div>
+              </a>
+            </div>
+            <div class="products__item-0">
+              <button class="products__favorites products__favorites--active">
+                    
+              </button>
+              
+              <div class="products__bottom-on products__bottom-on--active">
+                <div class="products__price">
+                  77 999 ₽
+                </div>
+                <button href="#" class="products__basket">
+
+                </button>
+              </div> 
+              <div class="products__bottom-off ">
+                <div class="products__text">
+                  Товара нет в наличии
+                </div>
+                <button class="products__button-off" href="#">
+                  УВЕДОМИТЬ
+                </button>
+              </div>
+              <a href="#" class="products__item" >
+                <div class="products__item-hover">
+                  посмотреть товар
+                </div>
+                <div class="products__top">
+                  <div class="products__event products__event-new--active">
+                    new
+                  </div>
+                  <div class="products__event">
+                    SALE
+                  </div>
+                  
+                </div>
+                <div class="products__img">
+                  <img src="./images/item__4.jpg" alt="Процессор AMD Ryzen 9 5950X BOX">
+                </div>
+                <div class="products__name">
+                  Процессор AMD Ryzen 9 5950X BOX
+                </div>
+              </a>
+            </div>
+            <div class="products__item-0">
+              <button class="products__favorites">
+                    
+              </button>
+              
+              <div class="products__bottom-on products__bottom-on--active">
+                <div class="products__price">
+                  110 999 ₽
+                </div>
+                <button href="#" class="products__basket">
+
+                </button>
+              </div> 
+              <div class="products__bottom-off ">
+                <div class="products__text">
+                  Товара нет в наличии
+                </div>
+                <button class="products__button-off" href="#">
+                  УВЕДОМИТЬ
+                </button>
+              </div>
+              <a href="#" class="products__item" >
+                <div class="products__item-hover">
+                  посмотреть товар
+                </div>
+                <div class="products__top">
+                  <div class="products__event products__event-new--active">
+                    new
+                  </div>
+                  <div class="products__event">
+                    SALE
+                  </div>
+                  
+                </div>
+                <div class="products__img">
+                  <img src="./images/item__11.jpg" alt="Видеокарта GIGABYTE GeForce RTX 3060 GAMING ">
+                </div>
+                <div class="products__name">
+                  Видеокарта GIGABYTE GeForce RTX 3060 GAMING 
+                </div>
+              </a>
+            </div>
+            
+          </div>
+          <div class="products__button-0">
+            <button class="products__button">
+              Показать еще
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="baner">
+    <div class="container">
+      <a class="baner__1" href="#">
+        <img src="./images/baner.jpg" alt="baner">
+      </a>
+      <a class="baner__2" href="#">
+        <img src="./images/baner-2.jpg" alt="baner">
+      </a>
+    </div>
+  </section>
+
+  <section class="popular__prodects">
+    <div class="container">
+      <div class="products">
+        <div class="products__title">
+          Популярные товары
+        </div>
+        <div class="products__slider products__slider-2">
+
+          <div class="products__item-0">
+            <button class="products__favorites">
+                  
+            </button>
+            
+            <div class="products__bottom-on products__bottom-on--active">
+              <div class="products__price">
+                14 399 ₽
+              </div>
+              <button href="#" class="products__basket">
+
+              </button>
+            </div> 
+            <div class="products__bottom-off">
+              <div class="products__text">
+                Товара нет в наличии
+              </div>
+              <button class="products__button-off" href="#">
+                УВЕДОМИТЬ
+              </button>
+            </div>
+            <a href="#" class="products__item" >
+              <div class="products__item-hover">
+                посмотреть товар
+              </div>
+              <div class="products__top">
+                <div class="products__event">
+                  new
+                </div>
+                <div class="products__event">
+                  SALE
+                </div>
+                
+              </div>
+              <div class="products__img">
+                <img src="./images/item__5.jpg" alt="Процессор AMD Ryzen 5 3600 OEM">
+              </div>
+              <div class="products__name">
+                Процессор AMD Ryzen 5 3600 OEM
+              </div>
+            </a>
+          </div>
+          <div class="products__item-0">
+            <button class="products__favorites">
+                  
+            </button>
+            
+            <div class="products__bottom-on products__bottom-on--active">
+              <div class="products__price">
+                12 999 ₽
+              </div>
+              <button href="#" class="products__basket">
+
+              </button>
+            </div> 
+            <div class="products__bottom-off ">
+              <div class="products__text">
+                Товара нет в наличии
+              </div>
+              <button class="products__button-off" href="#">
+                УВЕДОМИТЬ
+              </button>
+            </div>
+            <a href="#" class="products__item" >
+              <div class="products__item-hover">
+                посмотреть товар
+              </div>
+              <div class="products__top">
+                <div class="products__event ">
+                  new
+                </div>
+                <div class="products__event">
+                  SALE
+                </div>
+                
+              </div>
+              <div class="products__img">
+                <img src="./images/item__6.jpg" alt="Материнская плата MSI Z490-A PRO">
+              </div>
+              <div class="products__name">
+                Материнская плата MSI Z490-A PRO
+              </div>
+            </a>
+          </div>
+          <div class="products__item-0">
+            <button class="products__favorites">
+                  
+            </button>
+            
+            <div class="products__bottom-on products__bottom-on--active">
+              <div class="products__price">
+                77 999 ₽
+              </div>
+              <button href="#" class="products__basket">
+
+              </button>
+            </div> 
+            <div class="products__bottom-off ">
+              <div class="products__text">
+                Товара нет в наличии
+              </div>
+              <button class="products__button-off" href="#">
+                УВЕДОМИТЬ
+              </button>
+            </div>
+            <a href="#" class="products__item" >
+              <div class="products__item-hover">
+                посмотреть товар
+              </div>
+              <div class="products__top">
+                <div class="products__event ">
+                  new
+                </div>
+                <div class="products__event products__event-SALE--active">
+                  SALE
+                </div>
+                
+              </div>
+              <div class="products__img">
+                <img src="./images/item__7.jpg" alt="Оперативная память Crucial Ballistix RGB White">
+              </div>
+              <div class="products__name">
+                Оперативная память Crucial Ballistix RGB White
+              </div>
+            </a>
+          </div>
+          <div class="products__item-0">
+            <button class="products__favorites products__favorites--active">
+                  
+            </button>
+            
+            <div class="products__bottom-on ">
+              <div class="products__price">
+                77 999 ₽
+              </div>
+              <button href="#" class="products__basket">
+
+              </button>
+            </div> 
+            <div class="products__bottom-off products__bottom-off--active">
+              <div class="products__text">
+                Товара нет в наличии
+              </div>
+              <button class="products__button-off" href="#">
+                УВЕДОМИТЬ
+              </button>
+            </div>
+            <a href="#" class="products__item" >
+              <div class="products__item-hover">
+                посмотреть товар
+              </div>
+              <div class="products__top">
+                <div class="products__event">
+                  new
+                </div>
+                <div class="products__event products__event-SALE--active">
+                  SALE
+                </div>
+                
+              </div>
+              <div class="products__img">
+                <img src="./images/item__8.jpg" alt="Материнская плата ASRock B460M Pro4">
+              </div>
+              <div class="products__name">
+                Материнская плата ASRock B460M Pro4
+              </div>
+            </a>
+          </div>
+          <div class="products__item-0">
+            <button class="products__favorites products__favorites--active">
+                  
+            </button>
+            
+            <div class="products__bottom-on products__bottom-on--active">
+              <div class="products__price">
+                4 999 ₽
+              </div>
+              <button href="#" class="products__basket">
+
+              </button>
+            </div> 
+            <div class="products__bottom-off ">
+              <div class="products__text">
+                Товара нет в наличии
+              </div>
+              <button class="products__button-off" href="#">
+                УВЕДОМИТЬ
+              </button>
+            </div>
+            <a href="#" class="products__item" >
+              <div class="products__item-hover">
+                посмотреть товар
+              </div>
+              <div class="products__top">
+                <div class="products__event ">
+                  new
+                </div>
+                <div class="products__event ">
+                  SALE
+                </div>
+                
+              </div>
+              <div class="products__img">
+                <img src="./images/item__9.jpg" alt="Корпус Thermaltake S100 TG Snow">
+              </div>
+              <div class="products__name">
+                Корпус Thermaltake S100 TG Snow 
+              </div>
+            </a>
+          </div>
+          <div class="products__item-0">
+            <button class="products__favorites products__favorites--active">
+                  
+            </button>
+            
+            <div class="products__bottom-on products__bottom-on--active">
+              <div class="products__price">
+                22 999 ₽
+              </div>
+              <button href="#" class="products__basket">
+
+              </button>
+            </div> 
+            <div class="products__bottom-off ">
+              <div class="products__text">
+                Товара нет в наличии
+              </div>
+              <button class="products__button-off" href="#">
+                УВЕДОМИТЬ
+              </button>
+            </div>
+            <a href="#" class="products__item" >
+              <div class="products__item-hover">
+                посмотреть товар
+              </div>
+              <div class="products__top">
+                <div class="products__event">
+                  new
+                </div>
+                <div class="products__event">
+                  SALE
+                </div>
+                
+              </div>
+              <div class="products__img">
+                <img src="./images/item__12.jpg" alt="Видеокарта Palit GeForce GTX 1650 Gaming Pro">
+              </div>
+              <div class="products__name">
+                Видеокарта Palit GeForce GTX 1650 Gaming Pro 
+              </div>
+            </a>
+          </div>
+          
+        </div>
+        <div class="products__button-0">
+          <button class="products__button">
+            Показать еще
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer__logo">
+        <img src="./images/logo.png" alt="logo">
+      </a>
+      <div class="footer__info-0">
+        
+        <ul class="footer__info">
+          <li class="footer__info-title">
+            <a href="#">
+              Компания
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Корпоративные продажи
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Обратная связь
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Вакансии
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Новости
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Правила продаж
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Персональные данные
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Партнерам
+            </a>
+          </li>
+        </ul>
+      
+      
+        <ul class="footer__info">
+          <li class="footer__info-title">
+            Покупателям
+          </li>
+          <li>
+            <a href="#">
+              Бонусная программа
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Подарочные карты
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Проверка оплаты счёта
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Кредиты
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Доставка
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Сервисные центры
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Статус оборудования СЦ
+            </a>
+          </li>
+        </ul>
+      
+      
+        <ul class="footer__info">
+          <li class="footer__info-title">
+            Помощь
+          </li>
+          <li>
+            <a href="#">
+              Как оформить заказ
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Способы оплаты
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Обмен, возврат, гарантия
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Информация для юр. лиц
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Статусы заказов
+            </a>
+          </li>
+        </ul>
+        
+        <div class="footer__social">
+          <div class="footer__social-link">
+            <a href="#">
+              <img src="./images/instagram.svg" alt="1">
+            </a>
+            <a href="#">
+              <img src="./images/vk.svg" alt="1">
+            </a>
+            <a href="#">
+              <img src="./images/facebook.svg" alt="1">
+            </a>
+            <a href="#">
+              <img src="./images/youtube.svg" alt="1">
+            </a>
+            <a href="#">
+              <img src="./images/telegram.svg" alt="1">
+            </a>
+          </div>
+          <div class="footer__social-address">
+            <div class="footer__social-text">
+              8-000-00-00-000 (c 08:00 до 20:00)
+            </div>
+            <div class="footer__social-text">
+              Адреса пунктов выдачи в г. Зеленокумск
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
